@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		962571D326B41C1A0016EF6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 962571D226B41C1A0016EF6A /* Assets.xcassets */; };
 		962571D626B41C1A0016EF6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 962571D426B41C1A0016EF6A /* LaunchScreen.storyboard */; };
 		962571D926B41C1A0016EF6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 962571D826B41C1A0016EF6A /* main.m */; };
+		962571E126B41C840016EF6A /* ObjectiveChart in Frameworks */ = {isa = PBXBuildFile; productRef = 962571E026B41C840016EF6A /* ObjectiveChart */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				962571E126B41C840016EF6A /* ObjectiveChart in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +94,9 @@
 			dependencies = (
 			);
 			name = ObjectiveChartObjCExample;
+			packageProductDependencies = (
+				962571E026B41C840016EF6A /* ObjectiveChart */,
+			);
 			productName = ObjectiveChartObjCExample;
 			productReference = 962571C326B41C1A0016EF6A /* ObjectiveChartObjCExample.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +123,9 @@
 				Base,
 			);
 			mainGroup = 962571BA26B41C1A0016EF6A;
+			packageReferences = (
+				962571DF26B41C840016EF6A /* XCRemoteSwiftPackageReference "ObjectiveChart" */,
+			);
 			productRefGroup = 962571C426B41C1A0016EF6A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		962571DF26B41C840016EF6A /* XCRemoteSwiftPackageReference "ObjectiveChart" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tilucasoli/ObjectiveChart";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		962571E026B41C840016EF6A /* ObjectiveChart */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 962571DF26B41C840016EF6A /* XCRemoteSwiftPackageReference "ObjectiveChart" */;
+			productName = ObjectiveChart;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 962571BB26B41C1A0016EF6A /* Project object */;
 }
